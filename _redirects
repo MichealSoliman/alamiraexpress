@@ -1,0 +1,2 @@
+# Netlify / Cloudflare Pages: unify domain without www
+https://www.alamiraexpress.com/*  https://alamiraexpress.com/:splat  301!

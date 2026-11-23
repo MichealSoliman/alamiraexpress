@@ -1,0 +1,14 @@
+{
+  "name": "الأميرة إكسبريس لنقل العفش بجدة",
+  "short_name": "الأميرة إكسبريس",
+  "lang": "ar-SA",
+  "dir": "rtl",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#722847",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
