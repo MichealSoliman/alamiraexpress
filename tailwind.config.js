@@ -1,7 +1,7 @@
 /**
- * إعداد Tailwind — يُستخدم مع Tailwind Standalone CLI فقط (بدون npm).
+ * إعداد Tailwind — يُستخدم مع Tailwind Standalone CLI أو npx.
  * أمر البناء:
- *   ./tailwindcss.exe -i ./assets/css/input.css -o ./assets/css/style.css --minify
+ *   npx -y tailwindcss@3 -c tailwind.config.js -i assets/css/input.css -o assets/css/style.css --minify
  */
 module.exports = {
   content: [
@@ -42,6 +42,7 @@ module.exports = {
         whatsapp: {
           DEFAULT: '#0f7a3f', // أغمق من الأخضر الرسمي لتحقيق تباين AA مع النص الأبيض
           dark: '#0b5f31',
+          light: '#149d52',
         },
       },
       fontFamily: {
@@ -49,6 +50,15 @@ module.exports = {
       },
       maxWidth: {
         site: '80rem',
+      },
+      boxShadow: {
+        'xs': '0 1px 2px 0 rgba(0, 0, 0, 0.04)',
+        'card': '0 4px 20px -2px rgba(63, 21, 40, 0.05), 0 2px 8px -2px rgba(15, 23, 42, 0.04)',
+        'card-hover': '0 16px 36px -4px rgba(63, 21, 40, 0.12), 0 6px 16px -3px rgba(15, 23, 42, 0.06)',
+        'gold-glow': '0 4px 20px rgba(223, 176, 58, 0.35)',
+        'brand-glow': '0 4px 20px rgba(114, 40, 71, 0.3)',
+        'wa-glow': '0 4px 20px rgba(15, 122, 63, 0.35)',
+        'elevated': '0 20px 40px -15px rgba(38, 11, 23, 0.15)',
       },
     },
   },
