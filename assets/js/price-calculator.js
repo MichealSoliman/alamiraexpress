@@ -6,30 +6,30 @@
    ------------------------------------------------------------ */
 var PRICES = {
   minimum: 250,
-  // نقل داخل جدة شامل الفك والتركيب الأساسي
+  // نقل داخل جدة شامل الفك والتركيب الأساسي (تقدير استرشادي)
   base: {
-    studio: null,   // مثال: [400, 700]
-    apt23:  null,
-    apt45:  null,
-    villa:  null
+    studio: [400, 650],
+    apt23:  [650, 1100],
+    apt45:  [1000, 1600],
+    villa:  [1600, 3000]
   },
   // إضافة لكل دور بدون مصعد (للدور الثاني فما فوق)
-  perFloorNoElevator: null,  // مثال: [50, 100]
+  perFloorNoElevator: [50, 100],
   // خدمات إضافية
   extras: {
-    assembly: null,  // إذا لم يكن الفك والتركيب ضمن السعر الأساسي اتركه [0, 0]
-    packing:  null,
-    storage:  null   // شهرياً
+    assembly: [0, 0],      // الفك والتركيب الأساسي مشمول في الباقة
+    packing:  [200, 450],
+    storage:  [350, 700]   // شهرياً
   },
   // إضافة النقل من جدة إلى مدينة (فوق سعر الأساس)
   routes: {
     jeddah:  [0, 0],
-    makkah:  null,
-    taif:    null,
-    yanbu:   null,
-    madinah: null,
-    riyadh:  null,
-    dammam:  null
+    makkah:  [250, 400],
+    taif:    [400, 650],
+    yanbu:   [700, 1100],
+    madinah: [850, 1350],
+    riyadh:  [1750, 2700],
+    dammam:  [2350, 3500]
   }
 };
 
