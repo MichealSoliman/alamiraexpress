@@ -39,9 +39,11 @@ build.cmd
 - **صفحات الأحياء:** راجع الأحياء المجاورة والتفاصيل المحلية مع الفريق (عليها تعليق `راجع` في الكود).
 
 ## الرفع على الاستضافة
-ارفع كل الملفات **ما عدا**: `_templates/`، `tailwindcss.exe`، `tailwind.config.js`، `build.cmd`، `README.md`، `assets/css/input.css`.
+ارفع كل الملفات **ما عدا**: `_templates/`، `_seo/`، `tailwindcss.exe`، `tailwind.config.js`، `build.cmd`، `README.md`، `assets/css/input.css`.
 - Cloudflare Pages / Netlify: يستخدمون `_headers` و `_redirects`.
 - استضافة Apache عادية: تستخدم `.htaccess`.
 
 بعد الرفع: سجّل الموقع في Google Search Console و Bing Webmaster وارفع `sitemap.xml`.
-عند إضافة صفحة جديدة: انسخ `_templates/base.html`، وأضف رابطها في `sitemap.xml` وفي صفحة فهرس مناسبة (لا صفحات يتيمة).
+عند إضافة صفحة جديدة: انسخ `_templates/base.html` (أو أضف بياناتها في `_seo/pages_*.py` وشغّل `python _seo/gen.py`)، ثم `python _seo/sitemap.py`، وأضف رابطها في صفحة فهرس مناسبة (لا صفحات يتيمة).
+
+خطة SEO وخريطة الكلمات المفتاحية: `_seo/SEO-PLAN.md`.
