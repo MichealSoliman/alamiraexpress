@@ -234,3 +234,9 @@ if __name__ == "__main__":
         if only and p["path"] not in only:
             continue
         print("built", build(p))
+    # إعادة تطبيق إضافات المحتوى (expand) على الصفحات المولّدة
+    import expand
+    exp = expand.load()
+    for p in load_pages():
+        if (not only or p["path"] in only) and p["path"] in exp:
+            expand.apply(p["path"], exp[p["path"]])

@@ -39,7 +39,7 @@ build.cmd
 - **صفحات الأحياء:** راجع الأحياء المجاورة والتفاصيل المحلية مع الفريق (عليها تعليق `راجع` في الكود).
 
 ## الرفع على الاستضافة
-ارفع كل الملفات **ما عدا**: `_templates/`، `_seo/`، `tailwindcss.exe`، `tailwind.config.js`، `build.cmd`، `README.md`، `assets/css/input.css`.
+ارفع كل الملفات **ما عدا**: `_templates/`، `_seo/`، `assets/images/gallery/` (الصور الأصلية — المستخدم منها نسخ WebP في `assets/images/work/`)، `tailwindcss.exe`، `tailwind.config.js`، `build.cmd`، `README.md`، `assets/css/input.css`.
 - Cloudflare Pages / Netlify: يستخدمون `_headers` و `_redirects`.
 - استضافة Apache عادية: تستخدم `.htaccess`.
 
