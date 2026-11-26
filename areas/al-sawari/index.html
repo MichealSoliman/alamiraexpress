@@ -43,7 +43,7 @@
     "alternateName": "Al Ameera Express Movers Jeddah",
     "url": "https://alamiraexpress.com/",
     "logo": "https://alamiraexpress.com/assets/images/logo/logo.png",
-    "image": ["https://alamiraexpress.com/assets/images/og/og-default.jpg"],
+    "image": ["https://alamiraexpress.com/assets/images/og/og-default.jpg", "https://alamiraexpress.com/assets/images/work/majlis-villa-mughallaf.webp", "https://alamiraexpress.com/assets/images/work/tahmeel-afsh-sayyara-mughlaqa.webp", "https://alamiraexpress.com/assets/images/work/ghurfat-nawm-mafkuka-mughallafa.webp"],
     "telephone": "+966548437382",
     "priceRange": "يبدأ من 250 ريال",
     "currenciesAccepted": "SAR",
@@ -104,14 +104,19 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "نقل عفش حي الصواري جدة",
+    "description": "نقل عفش حي الصواري شمال جدة: فلل ودوبلكسات ومشاريع حديثة، لوري للكميات الكبيرة، فك وتركيب وتغليف، وتخزين مؤقت. معاينة مجانية وضمان. واتساب الآن.",
     "serviceType": "نقل عفش وأثاث",
     "url": "https://alamiraexpress.com/areas/al-sawari/",
     "provider": {
       "@id": "https://alamiraexpress.com/#business"
     },
     "areaServed": {
-      "@type": "City",
-      "name": "جدة"
+      "@type": "Place",
+      "name": "حي الصواري، جدة",
+      "containedInPlace": {
+        "@type": "City",
+        "name": "جدة"
+      }
     }
   }
   </script>
@@ -266,9 +271,9 @@
         <p>عند الانتقال من شقة إلى فيلا، تتغير طريقة ترتيب الأثاث، فارسم توزيع الغرف مسبقاً ليضع الفريق كل قطعة في مكانها من أول مرة. ونوفر <a href="/services/dismantling-assembly/">تركيب الأثاث</a> القديم والجديد، و<a href="/services/storage/">تخزين</a> ما لن تحتاجه فوراً.</p>
         <h2>نصيحة لسكان الصواري</h2>
         <p>إذا كانت الفيلا ما زالت تحت التشطيب، لا تنقل العفش قبل انتهاء الدهان والتنظيف؛ خزّنه مؤقتاً ثم انقله مرة واحدة.</p>
-        <h2>خدماتنا في حي الصواري</h2>
+        <h2>خدمات نقل العفش والأثاث في حي الصواري</h2>
         <ul>
-          <li><a href="/services/moving-furniture-jeddah/">نقل عفش كامل</a> من الفك حتى التركيب.</li>
+          <li>نقل عفش وأثاث كامل من الفك حتى التركيب، ضمن <a href="/services/moving-furniture-jeddah/">خدمة نقل عفش بجدة</a>.</li>
           <li><a href="/services/dismantling-assembly/">فك وتركيب الأثاث</a> بنجار متخصص.</li>
           <li><a href="/services/packing/">تغليف العفش</a> بالنايلون الفقاعي والكراتين والاسترتش.</li>
           <li><a href="/services/storage/">تخزين مؤقت</a> في مستودعنا في جدة.</li>
@@ -278,6 +283,21 @@
         <p>ونخدم كذلك الأحياء القريبة من الصواري، مثل الياقوت، أبحر الشمالية، المرجان، المحمدية.</p>
       </div>
     </div>
+    <!-- photos -->
+    <section class="section-sm container-site" aria-labelledby="photos-title">
+      <h2 id="photos-title" class="mb-5 text-xl">صور من نقلاتنا</h2>
+      <div class="photo-grid">
+          <figure class="photo">
+            <img src="/assets/images/work/qaat-villa-athath-mughallaf.webp" alt="قاعة فيلا واسعة بكامل أثاثها المغلف قبل النقل" width="1200" height="553" loading="lazy" decoding="async">
+            <figcaption>قاعة فيلا قبل النقل</figcaption>
+          </figure>
+          <figure class="photo">
+            <img src="/assets/images/work/kanab-saloon-mughallaf.webp" alt="كنب صالة طويل مغلف بالاسترتش تحت الثريا" width="553" height="1200" loading="lazy" decoding="async">
+            <figcaption>كنب صالة مغلف</figcaption>
+          </figure>
+      </div>
+    </section>
+    <!-- /photos -->
     <section class="section-sm container-site" aria-labelledby="faq-title">
       <div class="max-w-3xl">
         <h2 id="faq-title" class="mb-6">أسئلة عن النقل في الصواري</h2>

@@ -43,7 +43,7 @@
     "alternateName": "Al Ameera Express Movers Jeddah",
     "url": "https://alamiraexpress.com/",
     "logo": "https://alamiraexpress.com/assets/images/logo/logo.png",
-    "image": ["https://alamiraexpress.com/assets/images/og/og-default.jpg"],
+    "image": ["https://alamiraexpress.com/assets/images/og/og-default.jpg", "https://alamiraexpress.com/assets/images/work/majlis-villa-mughallaf.webp", "https://alamiraexpress.com/assets/images/work/tahmeel-afsh-sayyara-mughlaqa.webp", "https://alamiraexpress.com/assets/images/work/ghurfat-nawm-mafkuka-mughallafa.webp"],
     "telephone": "+966548437382",
     "priceRange": "يبدأ من 250 ريال",
     "currenciesAccepted": "SAR",
@@ -104,14 +104,19 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "نقل عفش حي المرجان جدة",
+    "description": "نقل عفش حي المرجان جدة: فلل وشقق حديثة في شمال جدة، فك وتركيب بنجار، تغليف يحمي من الرطوبة، ودينا ولوري مغلق. معاينة مجانية وضمان ضد التلف. اتصل.",
     "serviceType": "نقل عفش وأثاث",
     "url": "https://alamiraexpress.com/areas/al-murjan/",
     "provider": {
       "@id": "https://alamiraexpress.com/#business"
     },
     "areaServed": {
-      "@type": "City",
-      "name": "جدة"
+      "@type": "Place",
+      "name": "حي المرجان، جدة",
+      "containedInPlace": {
+        "@type": "City",
+        "name": "جدة"
+      }
     }
   }
   </script>
@@ -266,9 +271,9 @@
         <p>معاينة مجانية، ثم سعر مكتوب، ثم يوم نقل يبدأ بـ<a href="/services/packing/">التغليف</a> و<a href="/services/dismantling-assembly/">الفك</a>، والتحميل المنظم، والتركيب في البيت الجديد. وإذا كان العفش سيُخزن فترة قبل الانتقال، نغلفه بطريقة تناسب رطوبة جدة في <a href="/services/storage/">مستودعنا</a>.</p>
         <h2>نصيحة لسكان المرجان</h2>
         <p>لا تترك المراتب والكنب مكشوفة في الشرفة أو قرب الباب يوم النقل؛ فالرطوبة العالية تؤثر عليها خلال ساعات. غلفها أولاً واتركها داخل البيت حتى التحميل.</p>
-        <h2>خدماتنا في حي المرجان</h2>
+        <h2>خدمات نقل العفش والأثاث في حي المرجان</h2>
         <ul>
-          <li><a href="/services/moving-furniture-jeddah/">نقل عفش كامل</a> من الفك حتى التركيب.</li>
+          <li>نقل عفش وأثاث كامل من الفك حتى التركيب، ضمن <a href="/services/moving-furniture-jeddah/">خدمة نقل عفش بجدة</a>.</li>
           <li><a href="/services/dismantling-assembly/">فك وتركيب الأثاث</a> بنجار متخصص.</li>
           <li><a href="/services/packing/">تغليف العفش</a> بالنايلون الفقاعي والكراتين والاسترتش.</li>
           <li><a href="/services/storage/">تخزين مؤقت</a> في مستودعنا في جدة.</li>
@@ -278,6 +283,21 @@
         <p>ونخدم كذلك الأحياء القريبة من المرجان، مثل المحمدية، الشاطئ، الصواري، أبحر الجنوبية.</p>
       </div>
     </div>
+    <!-- photos -->
+    <section class="section-sm container-site" aria-labelledby="photos-title">
+      <h2 id="photos-title" class="mb-5 text-xl">صور من نقلاتنا</h2>
+      <div class="photo-grid">
+          <figure class="photo">
+            <img src="/assets/images/work/majlis-villa-mughallaf.webp" alt="كنب مجلس فاخر مغلف بالاسترتش داخل فيلا قبل نقله" width="960" height="1100" loading="lazy" decoding="async">
+            <figcaption>مجلس فيلا مغلف بالكامل</figcaption>
+          </figure>
+          <figure class="photo">
+            <img src="/assets/images/work/saloon-villa-athath-mughallaf.webp" alt="صالة فيلا بعد تغليف كل الأثاث بالاسترتش استعداداً للنقل" width="960" height="1100" loading="lazy" decoding="async">
+            <figcaption>صالة فيلا بعد التغليف الكامل</figcaption>
+          </figure>
+      </div>
+    </section>
+    <!-- /photos -->
     <section class="section-sm container-site" aria-labelledby="faq-title">
       <div class="max-w-3xl">
         <h2 id="faq-title" class="mb-6">أسئلة عن النقل في المرجان</h2>

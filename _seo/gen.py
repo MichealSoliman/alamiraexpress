@@ -116,7 +116,7 @@ def build(p):
   <meta property="og:image" content="https://alamiraexpress.com/assets/images/og/og-default.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
+{f'  <meta property="article:published_time" content="{p["date"]}">{chr(10)}' if kind == 'blog' else ''}  <meta name="twitter:card" content="summary_large_image">
 
   '''
     s = re.sub(r"<title>.*?(?=<meta name=\"theme-color\")", lambda m: head, s, count=1, flags=re.S)
@@ -138,10 +138,14 @@ def build(p):
             "publisher": {"@id": "https://alamiraexpress.com/#business"},
         })
     else:
+        default_area = {"@type": "City", "name": "جدة"}
+        if kind == "area":
+            default_area = {"@type": "Place", "name": f'{p["crumb"]}، جدة', "containedInPlace": {"@type": "City", "name": "جدة"}}
         svc = {"@context": "https://schema.org", "@type": "Service", "name": p["service_name"],
+               "description": desc,
                "serviceType": p.get("service_type", "نقل عفش وأثاث"), "url": url,
                "provider": {"@id": "https://alamiraexpress.com/#business"},
-               "areaServed": p.get("area_served", {"@type": "City", "name": "جدة"})}
+               "areaServed": p.get("area_served", default_area)}
         schemas += ld(svc)
     if p.get("faqs"):
         schemas += ld({
@@ -205,6 +209,8 @@ def build(p):
 
     # ---------- whatsapp (sticky bar + floating) ----------
     s = s.replace(old_wa, new_wa)
+    import photos
+    s = photos.inject(s, p["path"])
     write(f"{p['path']}/index.html", s)
     return p["path"]
 
